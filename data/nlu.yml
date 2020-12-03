@@ -1,0 +1,446 @@
+version: "2.0"
+
+nlu:
+  - synonym: Luke Skywalker
+    examples: |
+      - Luke Skywalker
+      - luke
+      - mestre luke
+
+  - synonym: C-3PO
+    examples: |
+      - C-3PO
+      - 3PO
+
+  - synonym: R2-D2
+    examples: |
+      - R2-D2
+      - artoo
+
+  - synonym: Darth Vader
+    examples: |
+      - Darth Vader
+      - vader
+      - lord vader
+      - lorde vader
+
+  - synonym: Leia Organa
+    examples: |
+      - Leia Organa
+      - leia
+      - princesa leia
+
+  - synonym: Owen Lars
+    examples: |
+      - Owen Lars
+
+  - synonym: Beru Whitesun lars
+    examples: |
+      - Beru Whitesun lars
+
+  - synonym: R5-D4
+    examples: |
+      - R5-D4
+
+  - synonym: Biggs Darklighter
+    examples: |
+      - Biggs Darklighter
+
+  - synonym: Obi-Wan Kenobi
+    examples: |
+      - Obi-Wan Kenobi
+      - obi-wan
+      - obi wan
+      - obi wan kenobi
+
+  - synonym: Anakin Skywalker
+    examples: |
+      - Anakin Skywalker
+      - Anakin
+
+  - synonym: Wilhuff Tarkin
+    examples: |
+      - Wilhuff Tarkin
+
+  - synonym: Chewbacca
+    examples: |
+      - Chewbacca
+      - chewie
+
+  - synonym: Han Solo
+    examples: |
+      - Han Solo
+      - solo
+      - capitão solo
+
+  - synonym: Greedo
+    examples: |
+      - Greedo
+
+  - synonym: Jabba Desilijic Tiure
+    examples: |
+      - Jabba Desilijic Tiure
+      - jabba, the hut
+      - jabba
+      - glutão
+
+  - synonym: Wedge Antilles
+    examples: |
+      - Wedge Antilles
+
+  - synonym: Jek Tono Porkins
+    examples: |
+      - Jek Tono Porkins
+
+  - synonym: Yoda
+    examples: |
+      - Yoda
+      - mestre yoda
+
+  - synonym: Palpatine
+    examples: |
+      - Palpatine
+
+  - synonym: Boba Fett
+    examples: |
+      - Boba Fett
+
+  - synonym: IG-88
+    examples: |
+      - IG-88
+
+  - synonym: Bossk
+    examples: |
+      - Bossk
+
+  - synonym: Lando Calrissian
+    examples: |
+      - Lando Calrissian
+
+  - synonym: Lobot
+    examples: |
+      - Lobot
+
+  - synonym: Ackbar
+    examples: |
+      - Ackbar
+
+  - synonym: Mon Mothma
+    examples: |
+      - Mon Mothma
+
+  - synonym: Arvel Crynyd
+    examples: |
+      - Arvel Crynyd
+
+  - synonym: Wicket Systri Warrick
+    examples: |
+      - Wicket Systri Warrick
+
+  - synonym: Nien Nunb
+    examples: |
+      - Nien Nunb
+
+  - synonym: Qui-Gon Jinn
+    examples: |
+      - Qui-Gon Jinn
+
+  - synonym: Nute Gunray
+    examples: |
+      - Nute Gunray
+
+  - synonym: Finis Valorum
+    examples: |
+      - Finis Valorum
+
+  - synonym: Padmé Amidala
+    examples: |
+      - Padmé Amidala
+      - padmé
+
+  - synonym: Jar Jar Binks
+    examples: |
+      - Jar Jar Binks
+
+  - synonym: Roos Tarpals
+    examples: |
+      - Roos Tarpals
+
+  - synonym: Rugor Nass
+    examples: |
+      - Rugor Nass
+
+  - synonym: Ric Olié
+    examples: |
+      - Ric Olié
+
+  - synonym: Watto
+    examples: |
+      - Watto
+
+  - synonym: Sebulba
+    examples: |
+      - Sebulba
+
+  - synonym: Quarsh Panaka
+    examples: |
+      - Quarsh Panaka
+
+  - synonym: Shmi Skywalker
+    examples: |
+      - Shmi Skywalker
+
+  - synonym: Darth Maul
+    examples: |
+      - Darth Maul
+
+  - synonym: Bib Fortuna
+    examples: |
+      - Bib Fortuna
+
+  - synonym: Ayla Secura
+    examples: |
+      - Ayla Secura
+
+  - synonym: Ratts Tyerel
+    examples: |
+      - Ratts Tyerel
+
+  - synonym: Dud Bolt
+    examples: |
+      - Dud Bolt
+
+  - synonym: Gasgano
+    examples: |
+      - Gasgano
+
+  - synonym: Ben Quadinaros
+    examples: |
+      - Ben Quadinaros
+
+  - synonym: Mace Windu
+    examples: |
+      - Mace Windu
+
+  - synonym: Ki-Adi-Mundi
+    examples: |
+      - Ki-Adi-Mundi
+
+  - synonym: Kit Fisto
+    examples: |
+      - Kit Fisto
+
+  - synonym: Eeth Koth
+    examples: |
+      - Eeth Koth
+
+  - synonym: Adi Gallia
+    examples: |
+      - Adi Gallia
+
+  - synonym: Saesee Tiin
+    examples: |
+      - Saesee Tiin
+
+  - synonym: Yarael Poof
+    examples: |
+      - Yarael Poof
+
+  - synonym: Plo Koon
+    examples: |
+      - Plo Koon
+
+  - synonym: Mas Amedda
+    examples: |
+      - Mas Amedda
+
+  - synonym: Gregar Typho
+    examples: |
+      - Gregar Typho
+
+  - synonym: Cordé
+    examples: |
+      - Cordé
+
+  - synonym: Cliegg Lars
+    examples: |
+      - Cliegg Lars
+
+  - synonym: Poggle the Lesser
+    examples: |
+      - Poggle the Lesser
+
+  - synonym: Luminara Unduli
+    examples: |
+      - Luminara Unduli
+
+  - synonym: Barriss Offee
+    examples: |
+      - Barriss Offee
+
+  - synonym: Dormé
+    examples: |
+      - Dormé
+
+  - synonym: Dooku
+    examples: |
+      - Dooku
+
+  - synonym: Bail Prestor Organa
+    examples: |
+      - Bail Prestor Organa
+
+  - synonym: Jango Fett
+    examples: |
+      - Jango Fett
+
+  - synonym: Zam Wesell
+    examples: |
+      - Zam Wesell
+
+  - synonym: Dexter Jettster
+    examples: |
+      - Dexter Jettster
+
+  - synonym: Lama Su
+    examples: |
+      - Lama Su
+
+  - synonym: Taun We
+    examples: |
+      - Taun We
+
+  - synonym: Jocasta Nu
+    examples: |
+      - Jocasta Nu
+
+  - synonym: R4-P17
+    examples: |
+      - R4-P17
+
+  - synonym: Wat Tambor
+    examples: |
+      - Wat Tambor
+
+  - synonym: San Hill
+    examples: |
+      - San Hill
+
+  - synonym: Shaak Ti
+    examples: |
+      - Shaak Ti
+
+  - synonym: Grievous
+    examples: |
+      - Grievous
+
+  - synonym: Tarfful
+    examples: |
+      - Tarfful
+
+  - synonym: Raymus Antilles
+    examples: |
+      - Raymus Antilles
+
+  - synonym: Sly Moore
+    examples: |
+      - Sly Moore
+
+  - synonym: Tion Medon
+    examples: |
+      - Tion Medon
+
+  - intent: cumprimentos/boas_vindas
+    examples: |
+      - oi
+      - olá
+      - bom dia
+      - boa tarde
+      - boa noite
+      - como vai?
+      - oie
+      - e aí?
+
+  - intent: cumprimentos/adeus
+    examples: |
+      - tchau
+      - até mais
+      - até logo
+      - adeus
+      - vou nessa
+      - t+
+
+  - intent: compara/idade
+    examples: |
+      - quem é menos velho? [luke](person) ou [leia](person)?
+      - [leia](person) é mais velha que [luke](person)?
+      - [darth vader](person) é mais novo que o [han solo](person)?
+      - quem é mais novo? [han solo](person) ou [c-3po](person)?
+      - [han solo](person) é menos novo que o [luke](person)?
+      - Quem nasceu antes? [Leia](person) ou [Luke](person)?
+
+  - intent: compara/peso
+    examples: |
+      - quem pesa mais? [Luke](person) ou [leia](person)?
+      - [Leia](person) pesa menos que [Luke](person)?
+      - [Darth vader](person) pesa mais que [Han solo](person)?
+      - quem é mais leve? [c-3po](person) ou [r2-d2](person)?
+      - [han solo](person) é mais leve que [darth vader](person)?
+      - [luke](person) é mais pesado que [leia](person)?
+
+  - intent: compara/altura
+    examples: |
+      - Quem é mais alto? [Darth vader](person) ou [chewbacca](person)?
+      - [c-3po](person) é mais alto que [r2-d2](person)?
+      - [leia](person) é mais baixa que [luke](person)?
+      - quem é mais baixo? [obi wan kenobi](person) ou [han solo](person)?
+
+  - intent: descreve/olhos
+    examples: |
+      - qual a cor dos olhos do [luke](person)?
+      - de que cor são os olhos da [leia](person)?
+
+  - intent: descreve/altura
+    examples: |
+      - qual a altura do [darth vader](person)?
+      - [luke](person) skywalker é alto?
+      - [leia organa](person) é baixa?
+      - quantos centimentros mede [han solo](person)?
+      - quanto mede o [r2-d2](person)?
+
+  - intent: descreve/cabelos
+    examples: |
+      - qual a cor dos cabelos do [luke](person)?
+      - qual a cor dos pelos do [chewbacca](person)?
+      - [c-3po](person) tem cabelo?
+      - de que cor são os cabelos do [han solo](person)?
+
+  - intent: descreve/genero
+    examples: |
+      - [Leia organa](person) é homem ou mulher?
+      - [luke](person) é mulher ou homem?
+      - [han solo](person) é homem?
+      - [padmé](person) é mulher?
+
+  - intent: descreve/idade
+    examples: |
+      - Qual a idade da [Leia](person)?
+      - Que idade tem o [luke](person)?
+      - quantos anos tem o [darth vader](person)?
+      - é velho o [han solo](person)?
+      - qtos anos tem o [c-3po](person)?
+
+  - intent: descreve/pele
+    examples: |
+      - De que cor é o [c-3po](person)?
+      - qual a cor da pele da [leia](person)?
+      - de que cor é a pele do [luke](person)?
+
+  - intent: descreve/peso
+    examples: |
+      - Quanto pesa o [Jabba](person)?
+      - Qual o peso do [r2-d2](person)?
+      - é pesado o [obi wan kenobi](person)?
+      - é leve o [r2-d2](person)?
+      - é gordo o [darth vader](person)?
+      - é magro o [han solo](person)?

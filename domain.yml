@@ -1,0 +1,87 @@
+version: "2.0"
+
+intents:
+  - cumprimentos
+  - compara
+  - descreve
+
+entities:
+  - person
+
+responses:
+
+  utter_cumprimentos/boas_vindas:
+  - text: "Olá, como você está? Pronto para saber mais sobre os personagens do universo Star Wars? Pergunte sobre características físicas dos personagens e faça comparações de peso, altura e idade!"
+
+  utter_cumprimentos/adeus:
+  - text: "Até a próxima! Que a Força esteja com você!"
+
+  utter_compara/idade:
+  - text: "No ano da batalha de Yavin, {person1} tinha {person1_info} anos e {person2} tinha {person2_info}."
+
+  utter_compara/peso:
+  - text: "{person1} pesa {person1_info} quilos, enquanto {person2} pesa {person2_info} quilos."
+
+  utter_compara/altura:
+  - text: "{person1} tem {person1_info} centímetros de altura, enquanto {person2} tem {person2_info} centímetros de altura."
+
+  utter_descreve/olhos:
+  - text: "A cor dos olhos de {person1} é {person1_info}."
+
+  utter_descreve/altura:
+  - text: "A altura de {person1} é {person1_info} centímetros de altura."
+
+  utter_descreve/cabelos:
+  - text: "A cor dos cabelos de {person1} é {person1_info}."
+
+  utter_descreve/genero:
+  - text: "{person1} é {person1_info}."
+
+  utter_descreve/idade:
+  - text: "{person1} tinha {person1_info} anos de idade no ano da Batalha de Yavin."
+
+  utter_descreve/pele:
+  - text: "A cor da pele de {person1} é {person1_info}."
+
+  utter_descreve/peso:
+  - text: "{person1} pesa {person1_info} quilos."
+
+  utter_fallback:
+  - text: "Sinto uma perturbação na Força. Você pode reformular sua questão?"
+
+slots:
+  person1:
+    type: text
+    influence_conversation: false
+  person2:
+    type: text
+    influence_conversation: false
+  person1_info:
+    type: text
+    influence_conversation: false
+  person2_info:
+    type: text
+    influence_conversation: false
+
+forms:
+  compara_form:
+    person1:
+      - type: from_entity
+        entity: person
+    person2:
+      - type: from_entity
+        entity: person
+
+  descreve_form:
+    person1:
+      - type: from_entity
+        entity: person
+
+actions:
+  - action_clear_slots
+  - action_compara
+  - action_descreve
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
