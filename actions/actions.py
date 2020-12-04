@@ -39,7 +39,7 @@ from rasa_sdk.events import SlotSet, AllSlotsReset
 
 def search_person(person):
     
-    r = requests.get(f'https://swapi.dev/api/people/?search=' + person)
+    r = requests.get('https://swapi.dev/api/people/?search={0}'.format(person))
     
     return r.json()['results'][0]
 

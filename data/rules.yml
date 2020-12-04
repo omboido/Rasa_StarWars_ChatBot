@@ -12,22 +12,32 @@ rules:
   - intent: compara
   - action: compara_form
   - active_loop: compara_form
-  - action: action_compara
-  - action: utter_compara
-  - action: action_clear_slots
-  - action: action_deactivate_loop
-  - active_loop: null
+
+- rule: Consulta API e compara
+  condition:
+    - active_loop: compara_form
+  steps:
+    - action: action_compara
+    - action: utter_compara
+    - action: action_clear_slots
+    - action: action_deactivate_loop
+    - active_loop: null
 
 - rule: Descreve personagens
   steps:
   - intent: descreve
   - action: descreve_form
   - active_loop: descreve_form
-  - action: action_descreve
-  - action: utter_descreve
-  - action: action_clear_slots
-  - action: action_deactivate_loop
-  - active_loop: null
+
+- rule: Consulta API e descreve
+  condition:
+    - active_loop: descreve_form
+  steps:
+    - action: action_descreve
+    - action: utter_descreve
+    - action: action_clear_slots
+    - action: action_deactivate_loop
+    - active_loop: null
 
 - rule: fallback
   steps:
