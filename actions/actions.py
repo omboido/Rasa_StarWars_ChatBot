@@ -117,10 +117,9 @@ def get_tipo(intent):
         'olhos': 'eye_color'
         }
 
-    match = re.search(r'(?<=/)(.+$)', intent)
+    match = re.search(r'(?<=\/)(.+$)', intent)
     
     return dic[match.group(0)]
-    #return intent
 
 
 class ActionClearSlots(Action):
@@ -135,38 +134,38 @@ class ActionClearSlots(Action):
         return [AllSlotsReset()]
 
 
-class ActionCompara(Action):
+# class ActionCompara(Action):
 
-    def name(self) -> Text:
-        return "action_compara"
+#     def name(self) -> Text:
+#         return "action_compara"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        person1 = tracker.get_slot('person1')
-        person2 = tracker.get_slot('person2')
+#         person1 = tracker.get_slot('person1')
+#         person2 = tracker.get_slot('person2')
 
-        person1_response = search_person(person1)
-        person2_response = search_person(person2)
+#         person1_response = search_person(person1)
+#         person2_response = search_person(person2)
 
-        tipo = tracker.latest_message['intent']['name']
-        intent = tracker.latest_message["response_selector"][tipo]["response"]["intent_response_key"]
+#         tipo = tracker.latest_message['intent']['name']
+#         intent = tracker.latest_message["response_selector"][tipo]["response"]["intent_response_key"]
 
-        result = get_tipo(intent)
+#         result = get_tipo(intent)
         
-        person1_info = person1_response[result]
-        person2_info = person2_response[result]
+#         person1_info = person1_response[result]
+#         person2_info = person2_response[result]
 
-        person1_name = person1_response['name']
-        person2_name = person2_response['name']
+#         person1_name = person1_response['name']
+#         person2_name = person2_response['name']
         
-        return [
-            SlotSet('person1_info', person1_info),
-            SlotSet('person2_info', person2_info),
-            SlotSet('person1', person1_name),
-            SlotSet('person2', person2_name)
-            ]
+#         return [
+#             SlotSet('person1_info', person1_info),
+#             SlotSet('person2_info', person2_info),
+#             SlotSet('person1', person1_name),
+#             SlotSet('person2', person2_name)
+#             ]
 
 
 class ActionDescreve(Action):
@@ -183,11 +182,22 @@ class ActionDescreve(Action):
         person1_response = search_person(person1)
 
         tipo = tracker.latest_message['intent']['name']
+        print(tipo)
         intent = tracker.latest_message["response_selector"][tipo]["response"]["intent_response_key"]
+        print(intent)
 
         result = get_tipo(intent)
         
-        person1_info = person1_response[result]
+        if result == "eye_color":
+            person1_info = translate_olhos(person1_response[result])
+        elif result == "hair_color":
+            person1_info = translate_cabelo(person1_response[result])
+        elif result == "skin_color":
+            person1_info = translate_pele(person1_response[result])
+        elif result == "gender":
+            person1_info = translate_genero(person1_response[result])
+        else:
+            person1_info = person1_response[result]
 
         person1_name = person1_response['name']
         
@@ -195,5 +205,3 @@ class ActionDescreve(Action):
             SlotSet('person1_info', person1_info),
             SlotSet('person1', person1_name)
         ]
-        #return [SlotSet('person1_info', tracker.latest_message["response_selector"]["descreve"]["response"]["intent_response_key"]),
-         #     SlotSet('person1', None)]

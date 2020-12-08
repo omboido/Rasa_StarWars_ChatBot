@@ -7,22 +7,6 @@ rules:
   - intent: cumprimentos
   - action: utter_cumprimentos
 
-- rule: Compara personagens
-  steps:
-  - intent: compara
-  - action: compara_form
-  - active_loop: compara_form
-
-- rule: Consulta API e compara
-  condition:
-    - active_loop: compara_form
-  steps:
-    - action: action_compara
-    - action: utter_compara
-    - action: action_clear_slots
-    - action: action_deactivate_loop
-    - active_loop: null
-
 - rule: Descreve personagens
   steps:
   - intent: descreve
@@ -40,7 +24,6 @@ rules:
     - action: utter_descreve
     - action: action_clear_slots
     - action: action_deactivate_loop
-    
 
 - rule: fallback
   steps:

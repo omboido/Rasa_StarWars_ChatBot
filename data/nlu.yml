@@ -370,35 +370,14 @@ nlu:
       - vou nessa
       - t+
 
-  - intent: compara/idade
-    examples: |
-      - quem é menos velho? [luke](person) ou [leia](person)?
-      - [leia](person) é mais velha que [luke](person)?
-      - [darth vader](person) é mais novo que o [han solo](person)?
-      - quem é mais novo? [han solo](person) ou [c-3po](person)?
-      - [han solo](person) é menos novo que o [luke](person)?
-      - Quem nasceu antes? [Leia](person) ou [Luke](person)?
-
-  - intent: compara/peso
-    examples: |
-      - quem pesa mais? [Luke](person) ou [leia](person)?
-      - [Leia](person) pesa menos que [Luke](person)?
-      - [Darth vader](person) pesa mais que [Han solo](person)?
-      - quem é mais leve? [c-3po](person) ou [r2-d2](person)?
-      - [han solo](person) é mais leve que [darth vader](person)?
-      - [luke](person) é mais pesado que [leia](person)?
-
-  - intent: compara/altura
-    examples: |
-      - Quem é mais alto? [Darth vader](person) ou [chewbacca](person)?
-      - [c-3po](person) é mais alto que [r2-d2](person)?
-      - [leia](person) é mais baixa que [luke](person)?
-      - quem é mais baixo? [obi wan kenobi](person) ou [han solo](person)?
-
   - intent: descreve/olhos
     examples: |
       - qual a cor dos olhos do [luke](person)?
       - de que cor são os olhos da [leia](person)?
+      - olhos
+      - cor dos olhos
+      - cor do olho
+      - olho
 
   - intent: descreve/altura
     examples: |
@@ -407,6 +386,10 @@ nlu:
       - [leia organa](person) é baixa?
       - quantos centimentros mede [han solo](person)?
       - quanto mede o [r2-d2](person)?
+      - altura
+      - mede
+      - centímetros
+      - cm
 
   - intent: descreve/cabelos
     examples: |
@@ -414,6 +397,10 @@ nlu:
       - qual a cor dos pelos do [chewbacca](person)?
       - [c-3po](person) tem cabelo?
       - de que cor são os cabelos do [han solo](person)?
+      - cabelos
+      - pelo
+      - pelos
+      - cabelo
 
   - intent: descreve/genero
     examples: |
@@ -421,6 +408,13 @@ nlu:
       - [luke](person) é mulher ou homem?
       - [han solo](person) é homem?
       - [padmé](person) é mulher?
+      - gênero
+      - macho
+      - fêmea
+      - masculino
+      - feminino
+      - homem
+      - mulher
 
   - intent: descreve/idade
     examples: |
@@ -429,12 +423,19 @@ nlu:
       - quantos anos tem o [darth vader](person)?
       - é velho o [han solo](person)?
       - qtos anos tem o [c-3po](person)?
+      - idade
+      - anos
+      - velho
+      - novo
 
   - intent: descreve/pele
     examples: |
       - De que cor é o [c-3po](person)?
       - qual a cor da pele da [leia](person)?
       - de que cor é a pele do [luke](person)?
+      - pele
+      - tez
+      - cor
 
   - intent: descreve/peso
     examples: |
@@ -444,9 +445,94 @@ nlu:
       - é leve o [r2-d2](person)?
       - é gordo o [darth vader](person)?
       - é magro o [han solo](person)?
+      - quilos
+      - pesa
+      - gordo
+      - magro
+      - leve
+      - pesado
       
   - intent: so_treino_entity
     examples: |
-      - [luke](person)
-      - [darth](person)
-      - [skywalker](person)
+      - [Luke Skywalker](person)
+      - [C-3PO](person)
+      - [R2-D2](person)
+      - [Darth Vader](person)
+      - [Leia Organa](person)
+      - [Owen Lars](person)
+      - [Beru Whitesun lars](person)
+      - [R5-D4](person)
+      - [Biggs Darklighter](person)
+      - [Obi-Wan Kenobi](person)
+      - [Anakin Skywalker](person)
+      - [Wilhuff Tarkin](person)
+      - [Chewbacca](person)
+      - [Han Solo](person)
+      - [Greedo](person)
+      - [Jabba Desilijic Tiure](person)
+      - [Wedge Antilles](person)
+      - [Jek Tono Porkins](person)
+      - [Yoda](person)
+      - [Palpatine](person)
+      - [Boba Fett](person)
+      - [IG-88](person)
+      - [Bossk](person)
+      - [Lando Calrissian](person)
+      - [Lobot](person)
+      - [Ackbar](person)
+      - [Mon Mothma](person)
+      - [Arvel Crynyd](person)
+      - [Wicket Systri Warrick](person)
+      - [Nien Nunb](person)
+      - [Qui-Gon Jinn](person)
+      - [Nute Gunray](person)
+      - [Finis Valorum](person)
+      - [Padmé Amidala](person)
+      - [Jar Jar Binks](person)
+      - [Roos Tarpals](person)
+      - [Rugor Nass](person)
+      - [Ric Olié](person)
+      - [Watto](person)
+      - [Sebulba](person)
+      - [Quarsh Panaka](person)
+      - [Shmi Skywalker](person)
+      - [Darth Maul](person)
+      - [Bib Fortuna](person)
+      - [Ayla Secura](person)
+      - [Ratts Tyerel](person)
+      - [Dud Bolt](person)
+      - [Gasgano](person)
+      - [Ben Quadinaros](person)
+      - [Mace Windu](person)
+      - [Ki-Adi-Mundi](person)
+      - [Kit Fisto](person)
+      - [Eeth Koth](person)
+      - [Adi Gallia](person)
+      - [Saesee Tiin](person)
+      - [Yarael Poof](person)
+      - [Plo Koon](person)
+      - [Mas Amedda](person)
+      - [Gregar Typho](person)
+      - [Cordé](person)
+      - [Cliegg Lars](person)
+      - [Poggle the Lesser](person)
+      - [Luminara Unduli](person)
+      - [Barriss Offee](person)
+      - [Dormé](person)
+      - [Dooku](person)
+      - [Bail Prestor Organa](person)
+      - [Jango Fett](person)
+      - [Zam Wesell](person)
+      - [Dexter Jettster](person)
+      - [Lama Su](person)
+      - [Taun We](person)
+      - [Jocasta Nu](person)
+      - [R4-P17](person)
+      - [Wat Tambor](person)
+      - [San Hill](person)
+      - [Shaak Ti](person)
+      - [Grievous](person)
+      - [Tarfful](person)
+      - [Raymus Antilles](person)
+      - [Sly Moore](person)
+      - [Tion Medon](person)

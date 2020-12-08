@@ -18,9 +18,6 @@ pipeline:
     retrieval_intent: cumprimentos
   - name: ResponseSelector
     epochs: 50
-    retrieval_intent: compara
-  - name: ResponseSelector
-    epochs: 50
     retrieval_intent: descreve
   - name: FallbackClassifier
     threshold: 0.6
