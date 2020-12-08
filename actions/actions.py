@@ -120,6 +120,7 @@ def get_tipo(intent):
     match = re.search(r'(?<=/)(.+$)', intent)
     
     return dic[match.group(0)]
+    #return intent
 
 
 class ActionClearSlots(Action):
@@ -149,10 +150,13 @@ class ActionCompara(Action):
         person1_response = search_person(person1)
         person2_response = search_person(person2)
 
-        tipo = get_tipo(tracker.latest_message['intent'].get('name'))
+        tipo = tracker.latest_message['intent']['name']
+        intent = tracker.latest_message["response_selector"][tipo]["response"]["intent_response_key"]
+
+        result = get_tipo(intent)
         
-        person1_info = person1_response[tipo]
-        person2_info = person2_response[tipo]
+        person1_info = person1_response[result]
+        person2_info = person2_response[result]
 
         person1_name = person1_response['name']
         person2_name = person2_response['name']
@@ -178,9 +182,12 @@ class ActionDescreve(Action):
 
         person1_response = search_person(person1)
 
-        tipo = get_tipo(tracker.latest_message['intent'].get('name'))
+        tipo = tracker.latest_message['intent']['name']
+        intent = tracker.latest_message["response_selector"][tipo]["response"]["intent_response_key"]
+
+        result = get_tipo(intent)
         
-        person1_info = person1_response[tipo]
+        person1_info = person1_response[result]
 
         person1_name = person1_response['name']
         
@@ -188,3 +195,5 @@ class ActionDescreve(Action):
             SlotSet('person1_info', person1_info),
             SlotSet('person1', person1_name)
         ]
+        #return [SlotSet('person1_info', tracker.latest_message["response_selector"]["descreve"]["response"]["intent_response_key"]),
+         #     SlotSet('person1', None)]

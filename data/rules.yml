@@ -33,11 +33,14 @@ rules:
   condition:
     - active_loop: descreve_form
   steps:
+    - action: descreve_form
+    - active_loop: null
+    - action: utter_envio_form_descreve
     - action: action_descreve
     - action: utter_descreve
     - action: action_clear_slots
     - action: action_deactivate_loop
-    - active_loop: null
+    
 
 - rule: fallback
   steps:

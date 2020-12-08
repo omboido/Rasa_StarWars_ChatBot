@@ -49,6 +49,13 @@ responses:
   utter_fallback:
   - text: "Sinto uma perturbação na Força. Você pode reformular sua questão?"
 
+  utter_ask_descreve_form_person1:
+  - text: "de qual personagem você está falando mesmo?"
+
+  utter_envio_form_descreve:
+  - text: "deixe eu verificar os dados de {person1}..."
+
+
 slots:
   person1:
     type: text

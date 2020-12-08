@@ -444,3 +444,9 @@ nlu:
       - é leve o [r2-d2](person)?
       - é gordo o [darth vader](person)?
       - é magro o [han solo](person)?
+      
+  - intent: so_treino_entity
+    examples: |
+      - [luke](person)
+      - [darth](person)
+      - [skywalker](person)
